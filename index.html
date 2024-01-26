@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header></header>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link hover-3" href="index.html">Home</a>
+            <a class="cabecalho__menu__link hover-3" href="about.html">Sobre Mim</a>
+        </nav>
+    </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__conteudo__titulo">
@@ -18,12 +23,27 @@
                 <p class="apresentacao__conteudo__texto">Olá! Aline Aragão, estudante de tecnologia, atualmente estou fazendo o curso do Oracle 
                     parceria com a Alura. Eu sou ONE TURMA 6 do Programa ONE.</p>
                 <div class="apresentacao__links">
-                    <a class="button" href="https://www.linkedin.com/in/aline-cristina-silva-aragao/">Linkedin</a>
-                    <a class="button" href="https://github.com/bertolaaline">GitHub</a>
+                    <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
+                    <a class="button" ref="https://www.linkedin.com/in/aline-cristina-silva-aragao/" target="_blank">
+                        <img src="./img/linkedin-icon.svg" alt="">
+                        Linkedin
+                    </a>
+
+                    <a class="button" href="https://github.com/bertolaaline" target="_blank">
+                        <img src="./img/github-octocat.svg" alt="">
+                        GitHub
+                    </a>
+                    
+                        <a class="button" href="https://codepen.io/bertolaaline/" target="_blank">
+                           <img src="./img/codepen-icon.svg" alt="CodePen"> 
+                            CodePen
+                        </a>
                 </div>
         </section>
-            <img class="portifolio" src="img.png" alt="Foto da Joana Santos programando">
+            <img class="portifolio" src="./img/img.png" alt="Aline">
     </main>
-    <footer></footer>
+    <footer class="rodape">
+        <p>Este site foi desenvolvido através do curso da Oracle parceria com a Alura</p>
+    </footer>
 </body>
 </html>

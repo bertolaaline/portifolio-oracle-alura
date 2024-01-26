@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+    --cor-primaria:#1c1c1c;
+    --cor-secundaria:#c7e5e6;
+    --cor-terciaria: #22d4fd;
+
+    --font-primaria: 'Poppins', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: #e5e4e2;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15% ;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--font-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: var(--font-primaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+    font-family: var(--font-secundaria);
+}
+
+.portifolio {
+    width: 50%;
+    border-radius: 100%;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.button {
+    background-color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: var(--font-secundaria);
+}
+
+.button svg {
+    fill: currentColor;
+    height: 32px;
+}
+
+.button img {
+    height: 32px;
+}
+
+.button:hover {
+    background-color: #a1c2d5;
+
+}
+  
+.hover-3 {
+    --b: 0.1em;   /* the thickness of the line */
+    --c: #fff; /* the color */
+    
+    color: #22d4fd;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#fff 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+  }
+  .hover-3:hover {
+    --_p: 100%;
+    --_s: .3s;
+  }
+
+.rodape {
+    padding: 24px;
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--cor-primaria);
+}
